@@ -1,0 +1,116 @@
+import React from 'react';
+import { Section } from './Section';
+import { Button } from './Button';
+
+export const Concept: React.FC = () => {
+  return (
+    <Section id="concept" background="black">
+      {/* Header Section - Centered */}
+      <div className="flex flex-col items-center text-center mb-24 md:mb-32 animate-fade-in-up">
+        
+        {/* New Button with increased margin */}
+        <div className="mb-20">
+           <Button 
+             variant="outline" 
+             className="text-base px-10 py-4 border-white/40 text-white hover:border-kuon-gold hover:bg-kuon-gold hover:text-kuon-black min-w-[280px]"
+             onClick={() => window.open('https://lin.ee/kT3TzVC', '_blank')}
+           >
+             個別説明会はこちら
+           </Button>
+        </div>
+
+        {/* Lead Text - Font size reduced and bottom margin increased */}
+        <h2 className="text-lg md:text-2xl font-serif text-white leading-loose tracking-widest mb-20">
+          愛犬と共に、<br />
+          ホテルでもなく別荘でもない、<br />
+          「第二の我が家」のような<br />
+          人生を彩る時間を手に入れませんか。
+        </h2>
+        <div className="w-1 bg-kuon-gold h-12 mx-auto opacity-50"></div>
+      </div>
+
+      {/* 3 Key Concepts */}
+      <div className="flex flex-col gap-24 max-w-6xl mx-auto">
+        
+        {/* Concept 1: Text Left, Image Right */}
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <div className="w-full md:w-1/2 text-left order-2 md:order-1">
+            <h3 className="text-kuon-gold font-serif text-lg mb-3 tracking-wider">
+              圧倒的な自由を
+            </h3>
+            <p className="text-2xl md:text-3xl font-serif text-white mb-8">
+              「いつでも、気兼ねなく」
+            </p>
+            <p className="text-gray-400 font-sans text-sm leading-8 text-justify">
+              全棟独立型のプライベートヴィラだからこそ、周囲を気にすることなく愛犬との時間を最優先にお過ごしいただけます。大型犬ものびのびと遊べる空間で、誰にも邪魔されない休日を。
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 order-1 md:order-2">
+            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group">
+              <img 
+                src="https://kuon-resort.com/wp-content/uploads/2025/10/1.png" 
+                alt="Private Villa Exterior" 
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Concept 2: Image Left, Text Right (Zigzag Layout) */}
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          {/* Image - First on Mobile, First on Desktop */}
+          <div className="w-full md:w-1/2 order-1">
+            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group">
+              <img 
+                src="https://kuon-resort.com/wp-content/uploads/2025/10/8.png" 
+                alt="Family gathering with dogs" 
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+            </div>
+          </div>
+          
+          {/* Text - Second on Mobile, Second on Desktop */}
+          <div className="w-full md:w-1/2 text-left order-2">
+            <h3 className="text-kuon-gold font-serif text-lg mb-3 tracking-wider">
+              大切な家族と
+            </h3>
+            <p className="text-2xl md:text-3xl font-serif text-white mb-8">
+              「だれとでも、何度でも」
+            </p>
+            <p className="text-gray-400 font-sans text-sm leading-8 text-justify">
+              ご家族やご友人、そして愛犬。大切なパートナーとの絆を深めるための広大なドッグランと客室温泉をご用意しました。季節を変えて何度でも訪れたくなる、皆様の「居場所」となります。
+            </p>
+          </div>
+        </div>
+
+        {/* Concept 3: Text Left, Image Right */}
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <div className="w-full md:w-1/2 text-left order-2 md:order-1">
+            <h3 className="text-kuon-gold font-serif text-lg mb-3 tracking-wider">
+              極上の空間で
+            </h3>
+            <p className="text-2xl md:text-3xl font-serif text-white mb-8">
+              「安心して」楽しむ
+            </p>
+            <p className="text-gray-400 font-sans text-sm leading-8 text-justify">
+              別荘のようなプライベート感に、高級ホテルのホスピタリティをプラス。管理の手間なく、充実したアメニティと専属コンシェルジュが至福の時間をお約束します。
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 order-1 md:order-2">
+            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group">
+              <img 
+                src="https://kuon-resort.com/wp-content/uploads/2025/10/4.png" 
+                alt="Luxury Interior" 
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </Section>
+  );
+};
