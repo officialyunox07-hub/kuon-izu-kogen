@@ -42,25 +42,6 @@ const images: GalleryImage[] = [
     caption: '', 
     span: true 
   },
-  { 
-    id: '6-5', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/10.png', 
-    alt: '追加画像', 
-    caption: '',
-    span: true 
-  },
-  { 
-    id: '7', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/12.png', 
-    alt: 'テラス', 
-    caption: '' 
-  },
-  { 
-    id: '8', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/9.png', 
-    alt: '庭園', 
-    caption: '' 
-  },
 ];
 
 export const Gallery: React.FC = () => {
@@ -73,14 +54,10 @@ export const Gallery: React.FC = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-4">
         {images.map((img) => {
-          const isNewImage = img.id === '6-5'; // テラスの左側の新しい画像
-          const isTerrace = img.id === '7'; // テラス
-          const isGarden = img.id === '8'; // 庭園
-          const colStartClass = isNewImage ? 'md:col-start-1' : isTerrace ? 'md:col-start-3' : isGarden ? 'md:col-start-4' : '';
           return (
           <div 
             key={img.id} 
-            className={`relative overflow-hidden cursor-default ${img.span ? 'md:col-span-2' : 'md:col-span-1'} row-span-1 ${img.caption ? 'group' : ''} ${colStartClass}`}
+            className={`relative overflow-hidden cursor-default ${img.span ? 'md:col-span-2' : 'md:col-span-1'} row-span-1 ${img.caption ? 'group' : ''}`}
           >
             <img 
               src={img.src} 

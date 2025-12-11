@@ -1,9 +1,14 @@
 import React from 'react';
 import { Hero } from './components/Hero';
-import { Concept } from './components/Concept';
+import { Concept1 } from './components/Concept1';
+import { Concept2 } from './components/Concept2';
 import { Features } from './components/Features';
-import { Influencers } from './components/Influencers';
 import { Gallery } from './components/Gallery';
+import { CustomerVoices } from './components/CustomerVoices';
+import { DevelopmentPlan } from './components/DevelopmentPlan';
+import { InvestmentValue } from './components/InvestmentValue';
+import { MembershipFeatures } from './components/MembershipFeatures';
+import { Promise } from './components/Promise';
 import { Closing } from './components/Closing';
 import { Footer } from './components/Footer';
 
@@ -21,10 +26,15 @@ const App: React.FC = () => {
 
       <main>
         <Hero />
-        <Concept />
+        <Concept1 />
+        <Concept2 />
         <Features />
         <Gallery />
-        <Influencers />
+        <CustomerVoices />
+        <DevelopmentPlan />
+        <InvestmentValue />
+        <MembershipFeatures />
+        <Promise />
         <Closing />
       </main>
       

@@ -12,12 +12,14 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle, ali
 
   return (
     <div className={`mb-16 ${alignClass}`}>
-      <span className="block text-kuon-gold font-serif text-lg md:text-xl italic mb-3 tracking-wider">
-        {subtitle}
-      </span>
       <h2 className="text-3xl md:text-5xl font-serif font-medium text-white mb-6">
         {title}
       </h2>
+      {subtitle && (
+        <span className="block text-kuon-gold font-serif text-lg md:text-xl italic mb-3 tracking-wider">
+          {subtitle}
+        </span>
+      )}
       <div className={`w-16 h-0.5 bg-kuon-gold ${lineClass}`} />
     </div>
   );
