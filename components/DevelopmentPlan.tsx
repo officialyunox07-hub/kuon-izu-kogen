@@ -8,13 +8,13 @@ const plans = [
     year: '2024年',
     description: '伊豆高原に5施設の土地を確保。建設計画策定、1棟目の建設開始。石垣島に11施設建設可能な土地の取得、開発許認可の合意獲得。',
     icon: MapPin,
-    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/19.png'
+    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/16.png'
   },
   {
     year: '2025年',
     description: '伊豆高原の1棟完成、2棟目の建設開始予定。石垣島の開発計画の策定、年内に1棟目の建設着手予定。',
     icon: Building2,
-    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/8.png'
+    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/2.png'
   },
   {
     year: '2026年',
@@ -26,13 +26,13 @@ const plans = [
     year: '2028年',
     description: '石垣島全面OPEN、全国新規展開本格化。',
     icon: MapPin,
-    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/7.png'
+    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/10-1.png'
   },
   {
     year: '2035年',
     description: '全国100棟体制確立。日本最大級の会員制リゾートネットワークへ。将来的にはバリ、プーケット等アジア進出も計画。',
     icon: Calendar,
-    image: 'https://kuon-resort.com/wp-content/uploads/2025/10/11.png'
+    image: 'https://kuon-resort.com/wp-content/uploads/2025/02/countrywide4.png'
   }
 ];
 
@@ -90,13 +90,13 @@ export const DevelopmentPlan: React.FC = () => {
                 <div className={`w-full md:w-[45%] ml-16 md:ml-0 flex ${
                   index % 2 === 0 ? 'md:ml-auto md:pl-8' : 'md:mr-auto md:pr-8'
                 }`}>
-                  <div className="relative overflow-hidden rounded-sm border border-white/5 group w-full min-h-full">
+                  <div className={`relative overflow-hidden rounded-sm border border-white/5 group w-full min-h-full development-plan-image-${plan.year.replace('年', '')}`}>
                     <img 
                       src={plan.image} 
                       alt={plan.year}
-                      className="w-full h-full min-h-[300px] md:min-h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className={`w-full h-full min-h-[300px] md:min-h-full object-cover transition-transform duration-700 group-hover:scale-105 development-plan-img-${plan.year.replace('年', '')}`}
                     />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                    <div className={`absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 development-plan-overlay-${plan.year.replace('年', '')}`}></div>
                   </div>
                 </div>
               </div>

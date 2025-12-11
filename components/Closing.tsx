@@ -31,7 +31,7 @@ export const Closing: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-stretch">
             
             {/* Left Column: Content */}
-            <div className="w-full md:w-1/2 flex flex-col text-left justify-center">
+            <div className="w-full md:w-1/2 flex flex-col text-left pb-0">
               
               {/* Vertical List */}
               <div className="flex flex-col gap-6 mb-8 w-full">
@@ -67,8 +67,8 @@ export const Closing: React.FC = () => {
             </div>
 
             {/* Right Column: Image */}
-            <div className="w-full md:w-1/2 min-h-[300px]">
-              <div className="w-full h-full relative overflow-hidden rounded-sm border border-white/10 shadow-2xl">
+            <div className="w-full md:w-1/2">
+              <div className="w-full h-[380px] relative overflow-hidden rounded-sm border border-white/10 shadow-2xl">
                  <img 
                    src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?q=80&w=2000&auto=format&fit=crop" 
                    alt="Concierge Service" 

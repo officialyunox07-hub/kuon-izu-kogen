@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[20s] hover:scale-105"
-        style={{ backgroundImage: 'url("https://kuon-resort.com/wp-content/uploads/2025/10/19.png")' }}
+        style={{ backgroundImage: 'url("https://kuon-resort.com/wp-content/uploads/2025/02/izu1.png")' }}
       >
         {/* グラデーションを調整して文字の視認性と画像の美しさを両立 */}
         <div className="absolute inset-0 bg-black/30 bg-gradient-to-b from-black/60 via-transparent to-kuon-black/90"></div>

@@ -28,13 +28,13 @@ export const Concept2: React.FC = () => {
             </p>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">
-            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group">
+            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group concept2-image-1">
               <img 
-                src="https://kuon-resort.com/wp-content/uploads/2025/10/1.png" 
+                src="/画像/S__8773646.jpg" 
                 alt="Private Villa Exterior" 
-                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 concept2-img-1"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 concept2-overlay-1"></div>
             </div>
           </div>
         </div>
@@ -43,13 +43,13 @@ export const Concept2: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Image - First on Mobile, First on Desktop */}
           <div className="w-full md:w-1/2 order-1">
-            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group">
+            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group concept2-image-2">
               <img 
-                src="https://kuon-resort.com/wp-content/uploads/2025/10/8.png" 
+                src="https://kuon-resort.com/wp-content/uploads/2025/10/1.png" 
                 alt="Family gathering with dogs" 
-                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 concept2-img-2"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 concept2-overlay-2"></div>
             </div>
           </div>
           
@@ -74,20 +74,20 @@ export const Concept2: React.FC = () => {
               極上の空間で
             </h3>
             <p className="text-2xl md:text-3xl font-serif text-white mb-8">
-              「安心して」楽しむ
+              「どこよりも、癒される」
             </p>
             <p className="text-gray-400 font-sans text-sm leading-8 text-justify">
               別荘のようなプライベート感に、高級ホテルのホスピタリティをプラス。管理の手間なく、充実したアメニティと専属コンシェルジュが至福の時間をお約束します。
             </p>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">
-            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group">
+            <div className="aspect-[4/3] w-full relative overflow-hidden rounded-sm border border-white/5 group concept2-image-3">
               <img 
-                src="https://kuon-resort.com/wp-content/uploads/2025/10/4.png" 
+                src="https://kuon-resort.com/wp-content/uploads/2025/10/5-1536x864.png" 
                 alt="Luxury Interior" 
-                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 concept2-img-3"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 concept2-overlay-3"></div>
             </div>
           </div>
         </div>
