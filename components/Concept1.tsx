@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from './Section';
 import { SectionTitle } from './SectionTitle';
 import { Button } from './Button';
-import { Users, Briefcase, TrendingUp } from 'lucide-react';
+import { PawPrint, Briefcase, TrendingUp } from 'lucide-react';
 
 export const Concept1: React.FC = () => {
   return (
@@ -44,11 +44,11 @@ export const Concept1: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-16 mt-16">
           <div className="group relative bg-kuon-black p-10 border border-white/5 hover:border-kuon-gold/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(184,161,121,0.2)]">
             <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
-              <Users size={100} className="text-kuon-gold" />
+              <PawPrint size={100} className="text-kuon-gold" />
             </div>
             
             <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-kuon-dark border-2 border-kuon-gold/30 text-kuon-gold group-hover:bg-kuon-gold group-hover:text-kuon-black group-hover:border-kuon-gold transition-all duration-300 group-hover:scale-110">
-              <Users size={40} />
+              <PawPrint size={40} />
             </div>
             
             <h3 className="text-2xl font-serif font-bold text-white mb-6 tracking-wider group-hover:text-kuon-gold transition-colors">
