@@ -42,7 +42,7 @@ export const InvestmentValue: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* 権利型会員権価格推移予想 */}
         <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-8 text-center tracking-wider">
+          <h3 className="text-xl md:text-3xl font-serif font-bold text-white mb-8 text-center tracking-wider">
             権利型会員権価格推移予想
           </h3>
           

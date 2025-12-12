@@ -4,14 +4,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 export const Closing: React.FC = () => {
   return (
-    <div className="relative py-24 px-6 overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop")' }}
-      >
-        <div className="absolute inset-0 bg-kuon-black/90"></div>
-      </div>
+    <div className="relative pt-16 pb-24 px-6 overflow-hidden bg-kuon-black">
 
       <div className="relative z-10 max-w-6xl mx-auto">
         
@@ -74,7 +67,7 @@ export const Closing: React.FC = () => {
                    alt="Concierge Service" 
                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                  />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                 <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black/40 to-transparent"></div>
               </div>
             </div>
 

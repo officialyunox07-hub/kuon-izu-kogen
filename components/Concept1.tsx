@@ -25,7 +25,7 @@ export const Concept1: React.FC = () => {
         </div>
 
         {/* Lead Text - Font size reduced and bottom margin increased */}
-        <h2 className="text-lg md:text-2xl font-serif text-white leading-loose tracking-widest mb-20">
+        <h2 className="text-[15px] md:text-2xl font-serif text-white leading-loose tracking-widest mb-20">
           愛犬と共に、<br />
           ホテルでもなく別荘でもない、<br />
           「第二の我が家」のような<br />
@@ -35,10 +35,11 @@ export const Concept1: React.FC = () => {
       </div>
 
       {/* Concerns Section */}
-      <div className="mt-24 md:mt-32">
+      <div className="mt-12 md:mt-32">
         <SectionTitle 
           title="こんなお困りはございませんか？" 
           subtitle="Concerns" 
+          titleClassName="text-[20px] md:text-5xl font-serif font-medium text-white mb-6"
         />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-16 mt-16">
@@ -56,7 +57,7 @@ export const Concept1: React.FC = () => {
             </h3>
             
             <p className="text-gray-300 font-sans text-base leading-8 whitespace-pre-line">
-              大型犬も一緒に泊まれるホテルがなかなか見つからない
+              愛犬も一緒に泊まれるホテルがなかなか見つからない
             </p>
           </div>
 
@@ -74,7 +75,7 @@ export const Concept1: React.FC = () => {
             </h3>
             
             <p className="text-gray-300 font-sans text-base leading-8 whitespace-pre-line">
-              人脈が活かせる高収益の{'\n'}新しいビジネスを探している
+              人脈が活かせる高収益の新しいビジネスを探している
             </p>
           </div>
 
@@ -92,7 +93,7 @@ export const Concept1: React.FC = () => {
             </h3>
             
             <p className="text-gray-300 font-sans text-base leading-8 whitespace-pre-line">
-              不動産投資・株式投資に代わる{'\n'}新しい投資対象を探している
+              不動産投資・株式投資に代わる「新しい投資対象」を探している
             </p>
           </div>
         </div>
@@ -103,11 +104,11 @@ export const Concept1: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-kuon-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-kuon-gold mb-6 tracking-widest">
+              <h3 className="text-2xl md:text-4xl font-serif font-bold text-kuon-gold mb-6 tracking-widest">
                 久苑リゾート会員権が解決できます
               </h3>
               
-              <p className="text-white/90 font-sans text-lg md:text-xl leading-relaxed mb-8 tracking-wide">
+              <p className="text-white/90 font-sans text-base md:text-xl leading-relaxed mb-8 tracking-wide">
                 家族との時間、ビジネスの成功、資産価値の向上<br />
                 すべてを手に入れるリゾート会員権で新しい人生をスタートしましょう。
               </p>

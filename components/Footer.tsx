@@ -12,29 +12,13 @@ export const Footer: React.FC = () => {
         </h2>
 
         {/* Contact Info */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 w-full max-w-3xl">
-          <div className="flex flex-col items-center gap-2">
-            <div className="flex items-center gap-2 text-kuon-gold mb-1">
-               <Phone size={18} />
-               <span className="font-serif text-white">TEL</span>
-            </div>
-            <span className="text-sm tracking-wider">0557-XX-XXXX</span>
-          </div>
-          
+        <div className="flex justify-center mb-12 w-full">
           <div className="flex flex-col items-center gap-2">
             <div className="flex items-center gap-2 text-kuon-gold mb-1">
                <Mail size={18} />
                <span className="font-serif text-white">MAIL</span>
             </div>
-            <span className="text-sm tracking-wider">reservation@kuon-resort.com</span>
-          </div>
-
-          <div className="flex flex-col items-center gap-2">
-             <div className="flex items-center gap-2 text-kuon-gold mb-1">
-               <MapPin size={18} />
-               <span className="font-serif text-white">ACCESS</span>
-            </div>
-            <span className="text-sm tracking-wider">静岡県伊東市伊豆高原...</span>
+            <span className="text-sm tracking-wider">support@kuon-resort.com</span>
           </div>
         </div>
 

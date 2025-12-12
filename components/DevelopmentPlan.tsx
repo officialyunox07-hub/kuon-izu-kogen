@@ -48,7 +48,7 @@ export const DevelopmentPlan: React.FC = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-kuon-gold/50 via-kuon-gold to-kuon-gold/50 transform md:-translate-x-1/2"></div>
+          <div className="hidden md:block absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-kuon-gold/50 via-kuon-gold to-kuon-gold/50 transform md:-translate-x-1/2"></div>
           
           <div className="space-y-16 md:space-y-24">
             {plans.map((plan, index) => (
@@ -59,13 +59,13 @@ export const DevelopmentPlan: React.FC = () => {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-kuon-gold border-4 border-kuon-black transform md:-translate-x-1/2 z-10 shadow-[0_0_20px_rgba(184,161,121,0.5)]"></div>
+                <div className="hidden md:block absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-kuon-gold border-4 border-kuon-black transform md:-translate-x-1/2 z-10 shadow-[0_0_20px_rgba(184,161,121,0.5)]"></div>
                 
                 {/* Content Card */}
-                <div className={`w-full md:w-[45%] ml-16 md:ml-0 ${
+                <div className={`w-full md:w-[45%] mx-auto md:mx-0 ${
                   index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
                 }`}>
-                  <div className="group relative bg-kuon-black p-8 md:p-10 border border-white/5 hover:border-kuon-gold/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(184,161,121,0.2)]">
+                  <div className="group relative bg-kuon-black p-8 md:p-10 border border-white/5 hover:border-kuon-gold/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(184,161,121,0.2)] h-[342px]">
                     <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                       <plan.icon size={100} className="text-kuon-gold" />
                     </div>
@@ -87,14 +87,14 @@ export const DevelopmentPlan: React.FC = () => {
                 </div>
                 
                 {/* Image */}
-                <div className={`w-full md:w-[45%] ml-16 md:ml-0 flex ${
+                <div className={`w-full md:w-[45%] mx-auto md:mx-0 flex ${
                   index % 2 === 0 ? 'md:ml-auto md:pl-8' : 'md:mr-auto md:pr-8'
                 }`}>
-                  <div className={`relative overflow-hidden rounded-sm border border-white/5 group w-full min-h-full development-plan-image-${plan.year.replace('年', '')}`}>
+                  <div className={`relative overflow-hidden rounded-sm border border-white/5 group w-full h-[342px] development-plan-image-${plan.year.replace('年', '')}`}>
                     <img 
                       src={plan.image} 
                       alt={plan.year}
-                      className={`w-full h-full min-h-[300px] md:min-h-full object-cover transition-transform duration-700 group-hover:scale-105 development-plan-img-${plan.year.replace('年', '')}`}
+                      className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 development-plan-img-${plan.year.replace('年', '')}`}
                     />
                     <div className={`absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 development-plan-overlay-${plan.year.replace('年', '')}`}></div>
                   </div>

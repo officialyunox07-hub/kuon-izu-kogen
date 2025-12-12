@@ -9,6 +9,7 @@ export const Concept2: React.FC = () => {
       <SectionTitle 
         title="施設の魅力" 
         subtitle="開発許可が困難な希少立地に位置する最高級の設備" 
+        subtitleClassName="block text-kuon-gold font-serif text-[13px] md:text-[17px] italic mb-3 tracking-wider"
       />
       
       {/* 3 Key Concepts */}

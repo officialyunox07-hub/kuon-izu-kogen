@@ -88,6 +88,7 @@ export const MembershipFeatures: React.FC = () => {
       <SectionTitle 
         title="税務・経理上のメリット" 
         subtitle="Tax & Accounting Benefits" 
+        titleClassName="text-2xl md:text-5xl font-serif font-medium text-white mb-6"
       />
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
