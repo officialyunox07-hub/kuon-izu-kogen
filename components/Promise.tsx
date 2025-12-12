@@ -86,7 +86,7 @@ export const Promise: React.FC = () => {
                     </div>
                     
                     {/* まとめ */}
-                    <p className="text-white font-serif text-base md:text-lg text-center pt-4 border-t border-white/10">
+                    <p className="text-white font-serif text-base md:text-lg text-center pt-6 border-t border-white/10">
                       これが、久苑グループに込めた私の想いです。
                     </p>
                   </div>
