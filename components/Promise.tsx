@@ -14,7 +14,7 @@ const sections = [
 
 export const Promise: React.FC = () => {
   return (
-    <Section id="promise" background="black" className="pb-12 md:pb-20">
+    <Section id="promise" background="black" className="hidden pb-12 md:pb-20">
       <SectionTitle 
         title="久苑グループ創業者の想い" 
         subtitle="" 

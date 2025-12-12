@@ -6,38 +6,28 @@ import { GalleryImage } from '../types';
 const images: GalleryImage[] = [
   { 
     id: '1', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/19.png', 
+    src: 'https://kuon-resort.com/wp-content/uploads/2025/02/izu7.png', 
     alt: '施設外観', 
     caption: '', 
     span: true 
   },
   { 
-    id: '2', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/8.png', 
-    alt: '客室', 
-    caption: '' 
-  },
-  { 
     id: '3', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/4.png', 
-    alt: '外観', 
-    caption: '' 
-  },
-  { 
-    id: '4', 
     src: 'https://kuon-resort.com/wp-content/uploads/2025/10/7.png', 
-    alt: 'バスルーム', 
-    caption: '' 
+    alt: '外観', 
+    caption: '',
+    span: true 
   },
   { 
     id: '5', 
     src: 'https://kuon-resort.com/wp-content/uploads/2025/10/11.png', 
     alt: 'キッチン', 
-    caption: '' 
+    caption: '',
+    span: true 
   },
   { 
     id: '6', 
-    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/1.png', 
+    src: 'https://kuon-resort.com/wp-content/uploads/2025/10/10.png', 
     alt: 'ドッグラン', 
     caption: '', 
     span: true 

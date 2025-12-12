@@ -47,13 +47,16 @@ export const InvestmentValue: React.FC = () => {
           </h3>
           
           {/* Graph Container */}
-          <div className="bg-kuon-black border border-white/5 p-8 md:p-12 rounded-sm relative overflow-hidden">
+          <div className="bg-kuon-black border border-white/5 px-8 md:px-12 py-4 md:py-12 rounded-sm relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-kuon-gold/5 via-transparent to-kuon-gold/5 opacity-50"></div>
             
             <div className="relative z-10">
               {/* Y-axis labels */}
-              <div className="flex items-end justify-between h-[400px] md:h-[500px] mb-4">
-                <div className="flex flex-col justify-between h-full text-gray-400 text-xs md:text-sm font-sans">
+              <div 
+                className="flex items-end justify-between h-[250px] md:h-[500px] mb-2 md:mb-4 relative bg-contain md:bg-cover bg-center bg-no-repeat py-[5px] md:py-0"
+                style={{ backgroundImage: 'url("/画像/グラフ.png")' }}
+              >
+                <div className="hidden flex flex-col justify-between h-full text-gray-400 text-xs md:text-sm font-sans">
                   <span>700</span>
                   <span>600</span>
                   <span>500</span>
@@ -65,7 +68,7 @@ export const InvestmentValue: React.FC = () => {
                 </div>
                 
                 {/* Bars */}
-                <div className="flex-1 flex items-end justify-around gap-4 md:gap-8 px-4 md:px-8">
+                <div className="hidden flex-1 flex items-end justify-around gap-4 md:gap-8 px-4 md:px-8">
                   {priceData.map((data, index) => {
                     const height = (data.price / maxPrice) * 100;
                     return (

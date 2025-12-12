@@ -53,7 +53,7 @@ export const Concept1: React.FC = () => {
             </div>
             
             <h3 className="text-2xl font-serif font-bold text-white mb-6 tracking-wider group-hover:text-kuon-gold transition-colors">
-              ファミリー層
+              ファミリー
             </h3>
             
             <p className="text-gray-300 font-sans text-base leading-8 whitespace-pre-line">
@@ -71,7 +71,7 @@ export const Concept1: React.FC = () => {
             </div>
             
             <h3 className="text-2xl font-serif font-bold text-white mb-6 tracking-wider group-hover:text-kuon-gold transition-colors">
-              経営者層
+              ビジネス
             </h3>
             
             <p className="text-gray-300 font-sans text-base leading-8 whitespace-pre-line">
@@ -89,7 +89,7 @@ export const Concept1: React.FC = () => {
             </div>
             
             <h3 className="text-2xl font-serif font-bold text-white mb-6 tracking-wider group-hover:text-kuon-gold transition-colors">
-              投資家層
+              投資
             </h3>
             
             <p className="text-gray-300 font-sans text-base leading-8 whitespace-pre-line">

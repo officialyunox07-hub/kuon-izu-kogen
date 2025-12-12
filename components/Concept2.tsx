@@ -78,7 +78,7 @@ export const Concept2: React.FC = () => {
               「どこよりも、癒される」
             </p>
             <p className="text-gray-400 font-sans text-sm leading-8 text-justify">
-              別荘のようなプライベート感に、高級ホテルのホスピタリティをプラス。管理の手間なく、充実したアメニティと専属コンシェルジュが至福の時間をお約束します。
+              リフレッシュ効果抜群の天然温泉。自然を眺めながら浸かれる温泉は、ラグジュアリー間満載。優雅な空間をカップルやファミリーでお楽しみ頂けます。
             </p>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">

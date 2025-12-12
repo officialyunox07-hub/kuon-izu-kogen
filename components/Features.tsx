@@ -1,27 +1,27 @@
 import React from 'react';
 import { Section } from './Section';
 import { SectionTitle } from './SectionTitle';
-import { PawPrint, Utensils, Waves } from 'lucide-react';
+import { PawPrint, TreePine, Sparkles } from 'lucide-react';
 import { FeatureItem } from '../types';
 
 const features: FeatureItem[] = [
   {
     id: 'dogrun',
-    title: '全棟プライベートドッグラン',
+    title: '安全なドッグラン',
     description: '他のお客様やワンちゃんを気にすることなく、愛犬を自由に遊ばせることができます。大型犬でも十分に走り回れる広さを確保し、足腰に優しい芝生を採用しています。',
     icon: PawPrint
   },
   {
     id: 'onsen',
-    title: '客室露天風呂・温泉',
-    description: '伊豆高原の名湯を、お部屋で心ゆくまで。浴槽からはドッグランを見渡せる設計となっており、愛犬を見守りながら至福の湯浴みをお愉しみいただけます。',
-    icon: Waves
+    title: '豊富なサービス',
+    description: '天然温泉でのリラックスタイムや、広々としたテラスでのバーベキュー、プールでの贅沢なひとときが、日常を忘れさせる特別な時間を演出する究極のリゾートです。',
+    icon: Sparkles
   },
   {
     id: 'dining',
-    title: 'お部屋で楽しむ美食',
-    description: '伊豆の旬の食材をふんだんに使用した創作和食を、プライベートダイニングで。愛犬用のスペシャルメニューもご用意しており、家族全員でのお食事を叶えます。',
-    icon: Utensils
+    title: '自然を楽しむ',
+    description: '敷地内に広がる豊かな自然が、特別なリゾート体験を提供します。澄んだ沢での釣りや、木々の間を駆け回るリスたちとの出会い、春には満開の桜が彩る絶景を楽しむことができます。',
+    icon: TreePine
   }
 ];
 
@@ -48,7 +48,7 @@ export const Features: React.FC = () => {
               {feature.title}
             </h3>
             
-            <p className="text-gray-400 font-sans text-sm leading-7 text-justify">
+            <p className="text-gray-400 font-sans text-sm leading-7 text-justify whitespace-pre-line">
               {feature.description}
             </p>
           </div>
