@@ -28,14 +28,14 @@ export const Hero: React.FC = () => {
 
           {/* Subcopy */}
           <p className="text-white/90 font-sans text-[10px] md:text-lg leading-loose tracking-wider max-w-3xl drop-shadow-md mb-10">
-            大型犬も歓迎する全棟プライベートドッグラン・温泉付きのヴィラ。<br className="hidden md:block"/>
-            誰にも邪魔されない、大切な家族との至福のひととき。
+            都内の高級ペットホテルでは叶わない<br className="hidden md:block"/>
+            700坪完全貸切 × プライベートプール × 会員制
           </p>
           
           {/* Additional Description */}
           <p className="text-white/80 font-sans text-[13px] md:text-lg font-bold leading-loose tracking-wider max-w-3xl drop-shadow-md">
-            石垣島・伊豆高原に展開する会員制リゾートで、<br />
-            資産価値向上と特別な体験を同時に実現
+            犬が主役のリゾートが<br />
+            伊豆高原に誕生しました。
           </p>
           
         </div>

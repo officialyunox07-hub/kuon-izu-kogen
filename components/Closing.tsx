@@ -36,7 +36,7 @@ export const Closing: React.FC = () => {
                   <CheckCircle2 className="text-kuon-gold shrink-0" size={24} />
                   <span className="text-white font-serif text-lg md:text-xl tracking-wide">施設の利用方法のご案内</span>
                 </div>
-                <div className="flex items-center gap-4 border-b border-white/10 pb-4">
+                <div className="hidden flex items-center gap-4 border-b border-white/10 pb-4">
                   <CheckCircle2 className="text-kuon-gold shrink-0" size={24} />
                   <span className="text-white font-serif text-lg md:text-xl tracking-wide">ホームグラウンドのご相談</span>
                 </div>
@@ -49,6 +49,10 @@ export const Closing: React.FC = () => {
 
               {/* CTA Button */}
               <div className="w-full">
+                <p className="text-kuon-gold font-serif text-[11px] md:text-[13px] font-bold text-left mb-3 tracking-wider whitespace-pre-line">
+                  当サイト限定：特別価格でご案内<br />
+                  会員権価格は段階的な価格改定を予定しています。
+                </p>
                  <Button 
                    fullWidth={true} 
                    className="text-lg md:text-xl px-8 py-5 shadow-xl"

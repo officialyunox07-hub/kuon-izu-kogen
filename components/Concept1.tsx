@@ -37,7 +37,7 @@ export const Concept1: React.FC = () => {
       {/* Concerns Section */}
       <div className="mt-12 md:mt-32">
         <SectionTitle 
-          title="こんなお困りはございませんか？" 
+          title="こんな方のための久苑です" 
           subtitle="Concerns" 
           titleClassName="text-[20px] md:text-5xl font-serif font-medium text-white mb-6"
         />
