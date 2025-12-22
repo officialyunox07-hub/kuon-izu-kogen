@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
           {/* Subcopy */}
           <p className="text-white/90 font-sans text-[10px] md:text-lg leading-loose tracking-wider max-w-3xl drop-shadow-md mb-10">
             都内の高級ペットホテルでは叶わない<br className="hidden md:block"/>
-            700坪完全貸切 × プライベートプール × 会員制
+            600坪完全貸切 × プライベートプール × 会員制
           </p>
           
           {/* Additional Description */}
